@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "express": "^4.10.4",
+    "firebase": "^2.0.4",
     "lodash": "^2.4.1",
     "method-override": "^2.3.0",
     "request": "^2.48.0"

@@ -48,6 +48,28 @@
 @include gridify(4, 600);
 
 /**
+ * Firepad
+ */
+
+#userlist {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: 175px;
+}
+
+#firepad {
+  position: absolute;
+  left: 175px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+/**
  * GENERAL
  */
 

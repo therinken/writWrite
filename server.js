@@ -13,7 +13,7 @@ function startServer() {
 
     function querify(queryParamsObject){
         return '?'+_.map(queryParamsObject || {}, function(val, key){
-            return key+'='+val
+            return key+'='+val;
         }).join('&');
     }
 

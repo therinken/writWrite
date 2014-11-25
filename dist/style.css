@@ -1,0 +1,60 @@
+/**
+ * BOX-SIZING
+ */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/**
+ * GRIDS
+ */
+.grid {
+  width: 100%;
+  display: block;
+  font-size: 0;
+  text-align: justify;
+  position: relative; }
+  .grid > * {
+    font-size: medium;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top; }
+  .grid:after {
+    display: inline-block;
+    width: 100%;
+    content: "";
+    font-size: medium; }
+
+@media only screen and (min-width: 400px) {
+  .grid-2-400 > * {
+    width: 48%; } }
+
+@media only screen and (min-width: 600px) {
+  .grid-4-600 > * {
+    width: 23%; } }
+
+/**
+ * Firepad
+ */
+#userlist {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: 175px; }
+
+#firepad {
+  position: absolute;
+  left: 175px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto; }
+
+/**
+ * GENERAL
+ */
+body {
+  -webkit-transition: opacity 0.25s ease;
+          transition: opacity 0.25s ease; }
