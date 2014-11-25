@@ -1,0 +1,57 @@
+
+@mixin gridify($col, $width, $gutter: 2) {
+    @media only screen and (min-width: #{$width}#{"px"}){
+        .grid-#{$col}-#{$width} {
+            & > * {
+                width: #{(100 / $col) - $gutter}#{"%"};
+            }
+        }
+    }
+}
+
+/**
+ * BOX-SIZING
+ */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/**
+ * GRIDS
+ */
+
+.grid {
+    width: 100%;
+    display: block;
+    font-size: 0;
+    text-align: justify;
+    position: relative;
+
+    & > * {
+        font-size: medium;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    &:after {
+        display: inline-block;
+        width: 100%;
+        content: "";
+        font-size: medium;
+    }
+}
+
+@include gridify(2, 400);
+@include gridify(4, 600);
+
+/**
+ * GENERAL
+ */
+
+body {
+    transition: opacity .25s ease;
+}
+    
