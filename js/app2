@@ -1,0 +1,31 @@
+
+window.onload = app;
+
+// runs when the DOM is loaded
+function app(){
+    "use strict";
+
+    // load some scripts (uses promises :D)
+    loader.load(
+        {url: "./bower_components/jquery/dist/jquery.min.js"},
+        {url: "./bower_components/lodash/dist/lodash.min.js"},
+        {url: "./bower_components/backbone/backbone.js"},
+        {url: "./bower_components/bootstrap/dist/js/bootstrap.min.js"},
+        {url: "./bower_components/firebase/firebase.js"},
+        {url: "./bower_components/codemirror/lib/codemirror.js"},
+        {url: "./bower_components/codemirror/lib/codemirror.css"},
+        {url: "./bower_components/firepad/dist/firepad.js"},
+        {url: "./bower_components/pathjs/path.js"},
+        {url: "./js/firepad-userlist.js"},
+        {url: "./js/userList.js"},
+        {url: "./dist/firepad-userlist.css"},
+        {url: "./dist/login.css"},
+        {url: "./dist/style.css"}
+        ).then(function(){
+        _.templateSettings.interpolate = /{([\s\S]+?)}/g;
+        document.body.style.opacity = 1;
+        // start app?
+    });
+
+}
+    

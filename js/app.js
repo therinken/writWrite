@@ -11,13 +11,11 @@ function app(){
         {url: "./bower_components/lodash/dist/lodash.min.js"},
         {url: "./bower_components/backbone/backbone.js"},
         {url: "./bower_components/firebase/firebase.js"},
-        {url: "./bower_components/firepad/dist/firepad.js"},
-        {url: "./node_modules/codemirror/lib/codemirror.js"},
-        {url: "./js/firepad-userlist.js"},
-        {url: "./dist/style.css"},
-        {url: "./dist/codemirror.css"},
-        {url: "./js/userList.js"}
-    ).then(function(){
+        {url: "./bower_components/bootstrap/dist/js/bootstrap.min.js"},
+        {url: "./bower_components/pathjs/path.min.js"},
+        {url: "./dist/login.css"},
+        {url: "./dist/style.css"}
+        ).then(function(){
         _.templateSettings.interpolate = /{([\s\S]+?)}/g;
         document.body.style.opacity = 1;
         // start app?
