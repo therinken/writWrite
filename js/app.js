@@ -13,6 +13,7 @@ function app(){
         {url: "./bower_components/firebase/firebase.js"},
         {url: "./bower_components/bootstrap/dist/js/bootstrap.min.js"},
         {url: "./bower_components/pathjs/path.min.js"},
+        {url: "./js/login.js"},
         {url: "./dist/login.css"},
         {url: "./dist/style.css"}
         ).then(function(){
