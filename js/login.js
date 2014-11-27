@@ -100,25 +100,6 @@
         });
     }
 
-    // authenticate anonymously
-    // returns a promise
-    function authAnonymously() {
-        var deferred = $.Deferred();
-        rootRef.authAnonymously(function (err, authData) {
-
-            if (authData) {
-                deferred.resolve(authData);
-            }
-
-            if (err) {
-                deferred.reject(err);
-            }
-
-        });
-
-        return deferred.promise();
-    }
-
     // route to the specified route if sucessful
     // if there is an error, show the alert
     function handleAuthResponse(promise, route) {
