@@ -2,7 +2,7 @@
     "use strict";
 
     // the main firebase reference
-    var rootRef = new Firebase('https://writwrite.firebaseio.com/');
+    var rootRef = new Firebase('https://writwrite.firebaseio.com/web/uauth');
 
     // pair our routes to our form elements and controller
     var routeMap = {
