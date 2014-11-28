@@ -209,7 +209,7 @@
 
             // set the fields
             form.find('#txtName').val(user.name);
-            form.find('#ddlDino').val(user.favoriteDinosaur);
+            form.find('#ddlBeer').val(user.favoriteBeer);
         });
 
         // Save user's info to Firebase
