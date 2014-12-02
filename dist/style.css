@@ -34,6 +34,22 @@
     width: 23%; } }
 
 /**
+ * squarify
+ */
+.squarify {
+  position: relative; }
+  .squarify:after {
+    content: "";
+    padding-top: 100%; }
+
+.squarify-grid > * {
+  position: relative; }
+  .squarify-grid > *:after {
+    content: "";
+    display: block;
+    padding-top: 100%; }
+
+/**
  * Firepad
  */
 #userlist {

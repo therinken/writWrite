@@ -48,6 +48,27 @@
 @include gridify(4, 600);
 
 /**
+ * squarify
+ */
+
+.squarify {
+  position: relative;
+  &:after {
+    content: "";
+    padding-top: 100%;
+  }
+}
+
+.squarify-grid > * {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+/**
  * Firepad
  */
 

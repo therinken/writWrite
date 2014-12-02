@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>writWrite</title>
+
+  <link rel="stylesheet" href="http://www.firepad.io/examples/codemirror/lib/codemirror.css" />
+  <link rel="stylesheet" href="http://www.firepad.io/examples/firepad.css" />
+  <link rel="stylesheet" href="http://www.firepad.io/examples/firepad-userlist.css" />
+  <link rel="stylesheet" href="./dist/writepad.css" />
+</head>
+
+<body>
+  <div id="top">
+    <div id="top-bg-tile">
+      <div id="top-content">
+        <div id="firepad-demo"></div>
+        <a onclick="displayPads()" id="my-pads" class="sprite-btn"></a>
+        <a href="./" id="create-pad" class="sprite-btn"></a>
+        <div id="my-pads-list">
+        </div>
+        <div id="firepad-container">
+          <div id="firepad-userlist"></div>
+          <div id="firepad"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <script src="http://www.firepad.io/examples/codemirror/lib/codemirror.js"></script>
+  <script src="http://www.firepad.io/examples/firepad.js"></script>
+  <script src="http://www.firepad.io/examples/firepad-userlist.js"></script>
+  <script src="http://www.firepad.io/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="demo.js"></script>
+
+
+<script type="text/javascript">
+    function displayPads() {
+      $('#my-pads-list').toggle();
+    }
+</script>
+</body>
+</html>
