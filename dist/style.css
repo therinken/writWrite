@@ -50,6 +50,13 @@
     padding-top: 100%; }
 
 /**
+ * cardFlip
+ */
+.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+/**
  * Firepad
  */
 #userlist {

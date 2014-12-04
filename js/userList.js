@@ -1,6 +1,6 @@
 function init(){
 	//initialize firebase by calling the unique URL
-	var firepadRef = new Firebase('https://writwrite.firebaseapp.com/');
+	var firepadRef = new Firebase('https://writwrite.firebaseio.com/firepad');
 	firepadRef = getExampleRef();
 
 	//need to create a new codeMirror
@@ -28,7 +28,7 @@ function init(){
 
 // Helper to get hash from end of URL or generate a random one
 function getExampleRef(){
-	var ref = new Firebase('https://writwrite.firebaseapp.com/');
+	var ref = new Firebase('https://writwrite.firebaseio.com/');
 	var hash = window.location.hash.replace(/#/g, '');
 	if (hash){
 		ref = ref.child(hash);
